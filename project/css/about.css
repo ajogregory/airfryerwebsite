@@ -1,0 +1,230 @@
+/*
+Author: Ajo Gregory
+Date: 03/06/2024
+File Name: styles.css
+*/
+/* CSS Reset */
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for header content */
+header {
+    text-align: center;
+    font-size: 3em;
+    color: #a93913;
+}
+
+header h1 {
+    font-style: italic;
+}
+
+/* Apply styles to the banner */
+.banner {
+    position: relative;
+}
+
+/* Style the banner image */
+.banner-image {
+    width: 100%;
+    display: block;
+}
+
+/* Style the logo */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    z-index: 1;
+}
+
+/* Style the banner content */
+.banner-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Style the banner heading */
+.banner-content h1 {
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #0899dc;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 2em;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    background-color: #e5e9fc;
+    overflow: auto;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+.action {
+    font-size: 1.75em;
+    color: #373684;
+    font-weight: bold;
+}
+
+/* image left align then text*/
+.imgtxt {
+    max-width: 50px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+.align-left {
+    float: left;
+    margin-right: 20px;
+}
+
+.text-content {
+    overflow: hidden;
+}
+
+.text-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/*style to text align below*/
+
+.image-with-text {
+    max-width: 800px;
+    /* Adjust container width as needed */
+    margin: 0 auto;
+    /* Center align container */
+
+}
+
+.text-below-image {
+    float: left;
+    clear: left;
+    /* Clear the float to ensure the text appears below the image */
+}
+
+.text-below-image p {
+    font-size: 1rem;
+    /* Example font size for paragraph */
+    line-height: 1.5;
+    /* Example line height for paragraph */
+}
+
+/*styles for special*/
+
+
+.section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section img {
+    max-width: 100%;
+}
+
+.section h2 {
+    color: #ff4500;
+}
+
+.guarantee {
+    font-style: italic;
+}
+
+.guarantee b {
+    font-weight: bold;
+}
+
+.reasons img {
+    width: 100px;
+    display: block;
+    margin: 10px auto;
+}
+
+
+#info {
+    clear: left;
+    background-color: #c0caf7;
+    padding: 1% 2%;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact a {
+    color: #4645a8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.map {
+    border: 5px solid #373684;
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.65em;
+    clear: left;
+}
+
+footer a {
+    color: #4645a8;
+    text-decoration: none;
+}
