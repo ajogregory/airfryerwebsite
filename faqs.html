@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./image/icon.png" type="image/icon">
+    <link rel="shortcut icon" href="./image/icon.png" type="image/icon">
+</head>
+
+<body>
+    <div>
+        <header class="banner">
+            <img src="./image/banner.webp" alt="banner image" class="banner-image">
+            <img src="./image/Logo.jpg" alt="airfryerlogo" class="logo">
+            <h1>NIRVANA AIR FRYER</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="faq">
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="faq-item">
+                    <div class="question">1. What is an air fryer?</div>
+                    <div class="answer">An air fryer is a kitchen appliance that cooks by circulating hot air around the
+                        food. It produces a crispy layer similar to frying but uses much less oil.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="question">2. How does an air fryer work?</div>
+                    <div class="answer">Air fryers use convection to circulate hot air and cook food. A heating element
+                        generates heat, and a fan circulates the hot air, cooking the food from all angles.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="question">3. What can I cook in an air fryer?</div>
+                    <div class="answer">You can cook a variety of foods, including fries, chicken wings, vegetables, and
+                        even baked goods like muffins and cakes.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="question">4. Is cooking with an air fryer healthy?</div>
+                    <div class="answer">Cooking with an air fryer is generally healthier than deep frying because it
+                        uses significantly less oil. It can reduce the calorie and fat content of your meals.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="question">5. How do I clean my Nirvana air fryer?</div>
+                    <div class="answer">To clean your Nirvana air fryer, remove the basket and pan and wash them with
+                        warm soapy water. Use a damp cloth to wipe the inside and outside of the appliance.</div>
+                </div>
+            </section>
+            <section class="form-section">
+                <h2>Submit Your Question</h2>
+                <form id="faqForm" action="submit_faq.php" method="POST">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="question">Your Question:</label>
+                    <textarea id="question" name="question" rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+
+        </main>
+        <footer>
+            <p>&copy;
+                Copyright 2099. <br>All
+                Rights Reserved. <br> Ajo Gregory C0942348</p>
+            <p><a href="mailto:nirvana@gmail.com">Request information</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>

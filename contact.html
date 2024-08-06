@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap"
         rel="stylesheet">
+    <link rel="icon" href="./image/icon.png" type="image/icon">
+    <link rel="shortcut icon" href="./image/icon.png" type="image/icon">
 </head>
 
 <body>
@@ -24,8 +26,8 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="team.html">Our Team</a></li>
-                <li><a href="specials.html">specials</a></li>
-                <li><a href="training.html">training</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="training.html">Training</a></li>
                 <li><a href="media.html">Media</a></li>
                 <li><a href="faqs.html">FAQs</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
@@ -44,7 +46,40 @@
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+            <div id=" form">
+                <h2>Complete the form below to begin your free
+                    trial.</h2>
+                <form class="form-grid">
+                    <!-- Start Form -->
+                    <fieldset>
+                        <legend>Customer Information</legend>
+                        <label for="fName">First Name:</label>
+                        <input type="text" name="fName" id="fName" required>
+                        <label for="lName">Last Name:</label>
+                        <input type="text" name="lName" id="lName" required>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="Phone" required>
+                    </fieldset>
 
+                    <fieldset>
+                        <legend>Durations</legend>
+                        <label for="reference">Time frames for your trial run.</label>
+                        <select name="reference" id="reference">
+                            <option value="ad">1 Week</option>
+                            <option value="friend">2 Weeks</option>
+                            <option value="google">1 Month</option>
+                            <option value="social">2 Months</option>
+                            <option value="other">More than 2</option>
+                        </select>
+                        <label for="questions">
+                            Questions?</label>
+                        <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+
+                        <input type="submit" id="submit" value="Submit" class="btn">
+                    </fieldset>
+                </form>
         </main>
         <footer>
             <p>&copy;
