@@ -1,25 +1,26 @@
-/*
-Author: Ajo Gregory
-Date: 03/06/2024
-File Name: styles.css
-*/
-/* CSS Reset */
 body,
 header,
 nav,
 main,
 footer,
 img,
+video,
 h1 {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-/* Style rule for images */
-img {
+/* Style rule for images and videos */
+img,
+video {
     max-width: 100%;
     display: block;
+}
+
+/* Style rule for box sizing applies to all elements */
+* {
+    box-sizing: border-box;
 }
 
 /* Style rules for header content */
@@ -125,7 +126,6 @@ main p {
     max-width: 50px;
     margin: 0 auto;
     overflow: hidden;
-
 }
 
 .align-left {
@@ -149,7 +149,6 @@ main p {
     /* Adjust container width as needed */
     margin: 0 auto;
     /* Center align container */
-
 }
 
 .text-below-image {
@@ -166,7 +165,6 @@ main p {
 }
 
 /*styles for special*/
-
 
 .section {
     background-color: white;
@@ -250,10 +248,7 @@ tbody tr:hover {
 img {
     width: 70px;
     height: auto;
-
-
 }
-
 
 #info {
     clear: left;
@@ -285,4 +280,86 @@ footer {
 footer a {
     color: #4645a8;
     text-decoration: none;
+}
+
+/* Media Query for Mobile Viewport */
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 2em;
+    }
+
+    nav li {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    .banner-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+
+    .image-with-text {
+        max-width: 100%;
+    }
+
+    .text-content p {
+        font-size: 0.9rem;
+    }
+
+    main {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .section h2 {
+        font-size: 1.5em;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 601px) {
+    header {
+        font-size: 3em;
+    }
+
+    nav li {
+        display: inline-block;
+        font-size: 2em;
+    }
+
+    .banner-content h1 {
+        font-size: 3rem;
+    }
+
+    .banner-content p {
+        font-size: 1.2rem;
+    }
+
+    .image-with-text {
+        max-width: 80px;
+    }
+
+    .text-content p {
+        font-size: 1rem;
+    }
+
+    main {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .section h2 {
+        font-size: 2em;
+    }
+
+    footer {
+        font-size: 0.65em;
+    }
 }

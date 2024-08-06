@@ -10,14 +10,29 @@ nav,
 main,
 footer,
 img,
-h1 {
+h1,
+div,
+ul,
+figure,
+figcaption,
+section,
+article,
+aside,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
+/* Style rule for box sizing applies to all elements  */
+* {
+    box-sizing: border-box;
+}
+
 /* Style rule for images */
-img {
+img,
+video {
     max-width: 100%;
     display: block;
 }
@@ -119,6 +134,72 @@ main p {
     font-weight: bold;
 }
 
+.faq {
+    margin-bottom: 20px;
+}
+
+.form-section {
+    margin-top: 30px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e65a50;
+}
+
+/* Desktop Viewport: Style rules for form elements */
+form {
+    width: auto;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+
+.btn {
+    grid-column: 1 / span 3;
+}
+
+.question {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.answer {
+    margin-left: 20px;
+}
+
 /* image left align then text*/
 .imgtxt {
     max-width: 50px;
@@ -195,7 +276,6 @@ main p {
 
 }
 
-
 #info {
     clear: left;
     background-color: #c0caf7;
@@ -216,6 +296,21 @@ main p {
     border: 5px solid #6e5453;
 }
 
+/* Desktop Viewport: Style rules for form elements */
+form {
+    width: auto;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+
+.btn {
+    grid-column: 1 / span 3;
+}
+
 /* Style rules for footer content */
 footer {
     text-align: center;
@@ -226,4 +321,96 @@ footer {
 footer a {
     color: #4645a8;
     text-decoration: none;
+}
+
+/* Media Query for Mobile Viewport */
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 2em;
+    }
+
+    nav li {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    .banner-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+
+    .form-section {
+        margin-top: 20px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .btn {
+        grid-column: 1;
+    }
+
+    .image-with-text {
+        max-width: 100%;
+    }
+
+    .text-content p {
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 5%;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 601px) {
+    header {
+        font-size: 3em;
+    }
+
+    nav li {
+        display: inline-block;
+        font-size: 2em;
+    }
+
+    .banner-content h1 {
+        font-size: 3rem;
+    }
+
+    .banner-content p {
+        font-size: 1.2rem;
+    }
+
+    .form-grid {
+        grid-template-columns: auto auto auto;
+    }
+
+    .btn {
+        grid-column: 1 / span 3;
+    }
+
+    .image-with-text {
+        max-width: 800px;
+    }
+
+    .text-content p {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 2%;
+    }
+
+    footer {
+        font-size: 0.65em;
+    }
 }

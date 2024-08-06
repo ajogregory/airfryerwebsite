@@ -124,7 +124,6 @@ main p {
     max-width: 50px;
     margin: 0 auto;
     overflow: hidden;
-
 }
 
 .align-left {
@@ -148,7 +147,6 @@ main p {
     /* Adjust container width as needed */
     margin: 0 auto;
     /* Center align container */
-
 }
 
 .text-below-image {
@@ -165,7 +163,6 @@ main p {
 }
 
 /*styles for special*/
-
 
 .section {
     background-color: white;
@@ -195,7 +192,6 @@ main p {
     display: block;
     margin: 10px auto;
 }
-
 
 #info {
     clear: left;
@@ -227,4 +223,84 @@ footer {
 footer a {
     color: #4645a8;
     text-decoration: none;
+}
+
+/* Media Query for Mobile Viewport */
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 2em;
+    }
+
+    nav li {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    .banner-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+
+    .image-with-text {
+        max-width: 100%;
+    }
+
+    .text-content p {
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 5%;
+    }
+
+    .section h2 {
+        font-size: 1.5em;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 601px) {
+    header {
+        font-size: 3em;
+    }
+
+    nav li {
+        display: inline-block;
+        font-size: 2em;
+    }
+
+    .banner-content h1 {
+        font-size: 3rem;
+    }
+
+    .banner-content p {
+        font-size: 1.2rem;
+    }
+
+    .image-with-text {
+        max-width: 800px;
+    }
+
+    .text-content p {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 2%;
+    }
+
+    .section h2 {
+        font-size: 2em;
+    }
+
+    footer {
+        font-size: 0.65em;
+    }
 }
